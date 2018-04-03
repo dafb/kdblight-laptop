@@ -10,7 +10,7 @@ i3-config
 
 Make sure to chmod the file (646):
 ```
- /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
+chmod 646 /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
 ```
 And make the two shell scripts executable with:
 ``` 
