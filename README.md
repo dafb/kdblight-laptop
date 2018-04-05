@@ -3,12 +3,14 @@ Manipulate keyboard backlight on Lenovo T460s with i3wm
 
 i3-config
 # Keyboard backlight controls
+
+Bind keys in i3 configuration with:
 ``` 
  bindsym XF86LaunchA exec /home/dfb/scripts/bash/kdb-light/kdblight-on.sh
  bindsym XF86Explorer exec /home/dfb/scripts/bash/kdb-light/kdblight-off.sh
 ```
 
-Make sure to chmod the file (646):
+Make sure to chmod the file for write access (646):
 ```
 chmod 646 /sys/class/leds/tpacpi\:\:kbd_backlight/brightness
 ```
